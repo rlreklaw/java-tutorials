@@ -36,14 +36,33 @@ public class ElementCounter {
 
         // ===== test using nested classes =====
         System.out.println("===== test with nested Predicate classes");
-        oddCount=999;
-        evenCount=999;
 
         oddCount = countElements(list, new OddPredicate());
         evenCount = countElements(list, new EvenPredicate());
 
         System.out.printf("# Odd values: %d%n", oddCount);
         System.out.printf("# Even values: %d%n", evenCount);
+
+        // ===== test using anonymous classes =====
+        System.out.println("===== test with anonymous Predicate classes");
+
+        oddCount = countElements(list, new Predicate<Integer>() {
+            @Override
+            public boolean test(Integer i) {
+                return i % 2 == 1;
+            }
+        });
+
+        evenCount = countElements(list, new Predicate<Integer>() {
+            @Override
+            public boolean test(Integer i) {
+                return i % 2 == 0;
+            }
+        });
+
+        System.out.printf("# Odd values: %d%n", oddCount);
+        System.out.printf("# Even values: %d%n", evenCount);
+
     }
 
 
