@@ -1,4 +1,4 @@
-package com.robonco.javatutorial.concurrency;
+package com.robonco.javatutorial.concurrency.example;
 
 public class SimpleThreads {
 
