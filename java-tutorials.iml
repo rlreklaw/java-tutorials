@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/generics/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/interfaces/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/basic_io/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/concurrency/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
